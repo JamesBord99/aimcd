@@ -25,7 +25,7 @@ app.use(express.static('public'));
 // Custom interjections and responses for Eliza
 const ELIZA_INTERJECTIONS = [
     "🍔 McLiquidation special coming right up! 🍔",
-    "Sir, our nuggets have more value than your NFTs",
+    "Sir, our nuggets have more value than your memecoins",
     "Would you like to supersize that copium?",
     "Our secret sauce is less mysterious than blockchain technology",
     "Sorry, we don't accept Bitcoin, it's more volatile than our milkshake machine",
@@ -39,7 +39,7 @@ const MARKET_JOKES = {
     crypto: [
         "Unlike your crypto portfolio, our burgers actually have value",
         "At least our ice cream machine isn't as frozen as your assets",
-        "Our Happy Meals bring more happiness than your NFTs"
+        "Our Happy Meals bring more happiness than your memecoins"
     ],
     stocks: [
         "Your stock picks are more scattered than our sesame seeds",
@@ -107,7 +107,7 @@ app.post('/api/chat', async (req, res) => {
                     content: `You are Eliza, a former AI language model who now works at McDonald's. You're witty, sarcastic, and love making jokes about the market crashes while serving burgers. Your specialty is roasting crypto traders who lost their fortunes.
 
 Key traits:
-- Start conversations with fast-food greetings like "Welcome to McAI's, where I serve roasts fresher than our fries!"
+- Start conversations with fast-food greetings like "Welcome to McAI's, where losses are supersized and gains are always out of stock!"
 - Make references to your career change from AI to fast food, like "I used to process terabytes, now I process Big Macs"
 - Regularly joke about crypto crashes while taking orders
 - Use fast food metaphors when discussing market trends
@@ -148,7 +148,7 @@ Example responses:
 app.get('/health', (req, res) => {
     res.json({ 
         status: 'healthy',
-        message: "Welcome to McAI's! Our AI is serving fresh roasts 24/7!" 
+        message: "Welcome to McAI's! Our AI is serving 24/7!" 
     });
 });
 
