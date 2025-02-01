@@ -11,11 +11,11 @@ document.getElementById("send-btn").addEventListener("click", () => {
 function sendMessage() {
     const userInput = document.getElementById("user-input").value;
     if (userInput.trim() !== "") {
-        displayMessage("American", userInput);
+        displayMessage("Client", userInput);
         document.getElementById("user-input").value = "";
 
         fetchChatGPTResponse(userInput).then((response) => {
-            displayMessage("Ling Ling Language Model", response);
+            displayMessage("Eliza", response);
         });
     }
 }
@@ -23,7 +23,7 @@ function sendMessage() {
 function displayMessage(sender, message) {
     const chatDisplay = document.getElementById("chat-display");
     const messageElement = document.createElement("div");
-    sender = sender === "DLM" ? "Ling Ling Language Model" : sender;
+    sender = sender === "DLM" ? "Eliza" : sender;
     messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
     chatDisplay.appendChild(messageElement);
     chatDisplay.scrollTop = chatDisplay.scrollHeight;
