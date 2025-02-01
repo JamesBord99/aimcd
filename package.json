@@ -1,5 +1,5 @@
 {
-  "name": "ling-ling-language-model",
+  "name": "ai16m",
   "version": "1.0.0",
   "description": "Chat interface with OpenAI integration",
   "main": "server.js",
